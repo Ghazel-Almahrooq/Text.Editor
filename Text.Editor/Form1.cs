@@ -37,11 +37,12 @@ namespace Text.Editor
         {
             filePath = "";
             richTextBox1.Text = "";
+           
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "TextDocument|*.txt", ValidateNames = true, Multiselect = false })
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Rich Text Files|*.rtf", ValidateNames = true, Multiselect = false })
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
@@ -59,7 +60,7 @@ namespace Text.Editor
         {
             if (string.IsNullOrEmpty(filePath))
             {
-                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "TextDocument|*.txt", ValidateNames = true })
+                using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Rich Text Files|*.rtf", ValidateNames = true })
                 {
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
