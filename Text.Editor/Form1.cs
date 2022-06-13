@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Text.Editor
 {
-    public partial class Form1 : Form
+    public partial class frmTextEditor : Form
     {
-        public Form1()
+        public frmTextEditor()
         {
             InitializeComponent();
         }
